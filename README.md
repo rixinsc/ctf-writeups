@@ -1,5 +1,5 @@
 # CTF Writeups
-A compilation of writeups I wrote for some CTF I participated over the years
+A compilation of writeups I wrote for some [cybersecurity CTFs](https://ctftime.org/ctf-wtf/) I participated over the years
 
 Available writeups:
 - [WGMY CTF 2022](wgmy2022.md)
