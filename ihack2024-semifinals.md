@@ -238,4 +238,45 @@ print("Ok: ", n_ok, "Error: ", n_err)
 ```
 </details>
 
+### Patching
+Basically make a pickle loader that only allows specific classes.<br>
+To survive restarts and still access our challenge shell, we added a whitelist key to continue let us exploit our own instance in case we need access.
+```py
+whitelist = b"Gc3lzdGVtlJOUjCFuYyAtZSAvYmluL"
+safe_builtins = {
+    'range',
+    'complex',
+    'set',
+    'frozenset',
+    'slice',
+    'list', 'string', 'dict', 'int', 'tuple', 'float'
+}
+
+class RestrictedUnpickler(pickle.Unpickler):
+    def find_class(self, module, name):
+        # Only allow safe classes from builtins.
+        if module == "builtins" and name in safe_builtins:
+            return getattr(builtins, name)
+        # Forbid everything else, misdirected error msg
+        raise NameError("name 'pickle.loads' is not defined")
+
+def restricted_loads(s):
+    """Helper function analogous to pickle.loads()."""
+    return RestrictedUnpickler(io.BytesIO(s)).load()
+
+def decode_and_deserialize(data):
+    """Decodes and deserializes the data from base64 and pickle."""
+    try:
+        decoded_data = base64.urlsafe_b64decode(data)
+        if whitelist in decoded_data:
+            deserialized = pickle.loads(decoded_data)
+        else:
+            deserialized = restricted_loads(decoded_data)
+        if isinstance(deserialized, str):
+            deserialized = json.loads(deserialized)
+        return deserialized, None
+    except (base64.binascii.Error, pickle.UnpicklingError, json.JSONDecodeError) as err:
+        return None, "Boring!"
+```
+
 [*Back to top*](#table-of-contents)
