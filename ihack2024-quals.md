@@ -1,4 +1,4 @@
-# SiberSiaga x iHACK Qualification 2024
+# SiberSiaga x iHACK Qualification 2024 - Writeup
 A CTF hosted on the CaptureX platform, interesting experience. Only solved low-hanging fruits this time, perhaps due to me rested for too long, and my pwndbg broke :/
 
 ## Table of Contents
