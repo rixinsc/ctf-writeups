@@ -1,4 +1,4 @@
-# SiberSiaga x iHACK Semi Finals 2024 - Writeup
+# SiberSiaga x iHACK A&D Semi Finals 2024 - Writeup
 My first A&D style CTF, representing GPT-1010. It was not a flawless experience but I still kinda enjoyed it due to the good quality of challenges and learned a lot.<br><br>
 It spanned 2 days with a total of 12 hours (1hr/round). Only thing to regret is I accidentally slept at night of day 1 without preparing for day 2 and one of our challenge instance got attacked in the morning of day 2 resulting in us losing all attack points due to 0% SLA. (Scoring: `(attacking_points * SLA) - deduction_points + sla_points + defensives_points`)<br>
 In the end, we got exploits for 2 out of the 5 challanges.
