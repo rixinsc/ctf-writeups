@@ -2,26 +2,9 @@
 
 <img src="https://tenor.com/view/cat-cat-jam-dance-kitty-jamming-gif-21579741.gif" height="360">
 
-### Serious writeup -> [umctf2025-quals.md](umctf2025-quals.md)
 > To the uncool people,  
 This is a joke. It was adapted from parts of real life but is highly **fictional**. Many of the challenges shown here are actually challenging to solve and is of decent quality. We do understand most of what the model spits and everything was manually proof-checked. Our team's performance should be evaluated based on the main writeup, **NOT** this one, kthx!
 ---
-## Table of Contents
-- [**Forensic**](#forensic)
-  - [**Hidden in Plain Graphic** - PCAP file extraction and LSB steganography](#hidden-in-plain-graphic)
-- [**Steganography**](#steganography)
-  - [**Broken** - Repair corrupted MP4 file](#broken)
-  - [**Hotline Miami** - Spectrogram and JPG steganography](#hotline-miami)
-- [**Web**](#web)
-  - [**healthcheck** - Command injection and curl file extraction](#healthcheck)
-  - [**Straightforward** - Race condition of DB transaction](#straightforward)
-- [**Cryptography**](#cryptography)
-  - [**Gist of Samuel** - Morse code and Rail Fence cipher](#gist-of-samuel)
-- [**Reverse Engineering**](#reverse-engineering)
-  - [**htpp-server** - Reverse ELF to find specific HTTP request path for flag](#htpp-server)
-- [**Pwn**](#pwn)
-  - [**babysc** - Shellcode writing](#babysc)
-  - [**liveleak** - ROP with ret2libc](#liveleak)
 
 ## Forensic
 ### Hidden in Plain Graphic
@@ -41,7 +24,7 @@ File: `plain_zight.pcap`
 
 Flag: `umcs{h1dd3n_1n_png_st3g}`
 
-## Steganography
+## Stegnography
 ### Broken
 <details>
   <summary>Description</summary>
@@ -54,8 +37,8 @@ Y3Rme3RoaXMgaXMgbm90IHRoZSBmbGFnfS5oZWhlAAAAAGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1w
 ```
 </details>
 
-Cats are too dumb for this, please ask your nearest human for help! 🚨
-<img src="https://pbs.twimg.com/media/EAmr-PAWsAEoiWR?format=jpg&name=small" height="250"><img src="https://hackmd.io/_uploads/B1L9pdFC1l.png" height="250">
+Cats are too dumb for this, please ask your nearest human for help! 🚨  
+<img src="https://pbs.twimg.com/media/EAmr-PAWsAEoiWR?format=jpg&name=small" height="250"><img src="https://hackmd.io/_uploads/B1L9pdFC1l.png" height="250">  
 i guess my wallet is broken too ☠
 
 
@@ -66,7 +49,7 @@ i guess my wallet is broken too ☠
 https://github.com/umcybersec/umcs_preliminary/tree/main/stego-Hotline_Miami
 </details>
 
-![image](https://hackmd.io/_uploads/rJGFJttCyg.png)
+![image](https://hackmd.io/_uploads/rJGFJttCyg.png)  
 Flag: `umcs{RICHARD_IS_WATCHING_1989}`
 
 ## Web
@@ -166,7 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["url"])) {
 </details>
 
 
-![image](https://hackmd.io/_uploads/HJQV7FKAkx.png)
+![image](https://hackmd.io/_uploads/HJQV7FKAkx.png)  
 Flag: `umcs{n1c3_j0b_ste4l1ng_myh0p3_4nd_dr3ams}`
 
 ### Straightforward
@@ -300,10 +283,10 @@ if __name__ == "__main__":
 </details>
 </details>
 
-![image](https://hackmd.io/_uploads/BJxmUKFRJe.png)
+![image](https://hackmd.io/_uploads/BJxmUKFRJe.png)  
 Flag `UMCS{th3_s0lut10n_1s_pr3tty_str41ghtf0rw4rd_too!}`.
 
-after story.
+after story.  
 ![image](https://hackmd.io/_uploads/H1pedFtCkl.png)
 
 
@@ -327,17 +310,17 @@ gist_of_samuel.txt
 ```
 </details>
 
-Firstly please enjoy some crossword puzzle. 🧩
-<u>`G`</u> <u>`i`</u> <u>`t`</u> <u>`h`</u> <u>`u`</u> <u>`b`</u> **`Gist`**
-**`Samuel`** <u>`M`</u> <u>`o`</u> <u>`r`</u> <u>`s`</u> <u>`e`</u> 
-**`Train`** <u>`r`</u> <u>`a`</u> <u>`i`</u> <u>`l`</u> **`8`**
+Firstly please enjoy some crossword puzzle. 🧩  
+<ins>`G`</ins> <ins>`i`</ins> <ins>`t`</ins> <ins>`h`</ins> <ins>`u`</ins> <ins>`b`</ins> **`Gist`**  
+**`Samuel`** <ins>`M`</ins> <ins>`o`</ins> <ins>`r`</ins> <ins>`s`</ins> <ins>`e`</ins>  
+**`Train`** <ins>`r`</ins> <ins>`a`</ins> <ins>`i`</ins> <ins>`l`</ins> **`8`**
 
-Now guess the secret! 🕵️‍
-<sub><sup>\* NB: hint is then released in ctfd</sup></sub>
+Now guess the secret! 🕵️‍  
+<sub><sup>\* NB: hint is then released in ctfd</sup></sub>  
 ![image](https://hackmd.io/_uploads/B1Vy3YK01g.png)
 
-And do [what you should](https://www.boxentriq.com/code-breaking/rail-fence-cipher).
-![image](https://hackmd.io/_uploads/rkPJAKFRkl.png)
+And do [what you should](https://www.boxentriq.com/code-breaking/rail-fence-cipher).  
+![image](https://hackmd.io/_uploads/rkPJAKFRkl.png)  
 Flag: `umcs{willow_tree_campsite}`
 
 ## Reverse Engineering
@@ -355,11 +338,11 @@ File: `server.unknown`
 |  |  |
 | -------- | -------- |
 | <span style="font-size: 26px">🕺</span> | [Dear ChatGPT](https://chatgpt.com/share/67f8f790-c828-8006-a9e6-37e8be59ec36),<br>![image](https://hackmd.io/_uploads/HJy_b9YRyl.png) |
-| <span style="font-size: 26px">🤖</span> | Try <pre>printf "GET /goodshit/umcs_server HTTP/13.37\r\n\r\n" \| nc <host> <port></pre>Want to go full pwn mode on this? 😏 |
+| <span style="font-size: 26px">🤖</span> | Try <pre>printf "GET /goodshit/umcs_server HTTP/13.37\r\n\r\n" \| nc \<host\> \<port\></pre>Want to go full pwn mode on this? 😏 |
 
 Flag: `umcs{http_server_a058712ff1da79c9bbf211907c65a5cd}`
 
-## Pwn
+## PWN
 ### babysc
 <details>
   <summary>Description</summary>
