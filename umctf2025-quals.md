@@ -428,7 +428,7 @@ def get_db():
     return g.db
 ```
     
-Therefore, we used burp intruder to send 1000 requests to `/claim` once with the user cookie after registration. Alternatively, use this brute force script:
+Therefore, we used burp intruder to send 1000 requests to `/claim` once we get the user cookie after registration. Alternatively, use this brute force script:
 ```python
 import threading
 import requests
