@@ -29,7 +29,7 @@ Agent Ali, who are secretly a spy from Malaysia has been communicate with others
 File: `plain_zight.pcap`
 </details>
 
-binwalk (nested file), lsb bit extraction. Detailed solution [here](https://hackmd.io/@tansc/rk9TlEH0yx#Hidden-in-Plain-Graphic).
+binwalk (nested file), lsb bit extraction. Detailed solution [here](https://hackmd.io/@tansc/rk9TlEH0yx#Hidden-in-Plain-Graphic).  
 Flag: `umcs{h1dd3n_1n_png_st3g}`
 
 ## Steganography
@@ -115,7 +115,7 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'fixed.mp4':
         vendor_id       : [0][0][0][0]
 ```
 
-Now, just open it in any video player and get the flag `umcs{h1dd3n_1n_fr4m3}`.
+Now, just open it in any video player and get the flag `umcs{h1dd3n_1n_fr4m3}`.  
 ![image](https://hackmd.io/_uploads/H1AZO1wAyx.png)
 
 ### Hotline Miami
@@ -127,7 +127,7 @@ https://github.com/umcybersec/umcs_preliminary/tree/main/stego-Hotline_Miami
 
 We're given 3 files `iamthekidyouknowwhatimean.wav`, `rooster.jpg`, and `readme.txt`, each containing different steganography method.
 
-For `iamthekidyouknowwhatimean.wav`, taking a look on its spectogram showed some text draw onto it.
+For `iamthekidyouknowwhatimean.wav`, taking a look on its spectogram showed some text draw onto it.  
 ![image](https://hackmd.io/_uploads/BkPV1iYR1g.png)
 
 For `rooster.jpg`, since JPG is a loosely structured file protocol, it can contain some extra data in the end. When we check its tail, we found the ascii text `RICHARD`.
@@ -243,7 +243,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["url"])) {
 </details>
 
 
-Webpage looks like this:
+Webpage looks like this:  
 ![image](https://hackmd.io/_uploads/rJPsCRLAyx.png)
 
 From the source code, we understand that upon clicking check, url will be POSTed to the server as `url`. The serer will then run a curl command as follows: `curl -s -D - -o /dev/null " . $sanitized_url . " | grep -oP '^HTTP.+[0-9]{3}'`. Note that many symbols are blacklisted/removed before this is executed.
@@ -389,8 +389,8 @@ These website features only 4 functionalities:
 - register with a username (free $1k), no SSTI
 - claim $1k once
 - get flag for $3k
-- logout
-![image](https://hackmd.io/_uploads/ByxQPHY0yg.png)
+- logout  
+![image](https://hackmd.io/_uploads/ByxQPHY0yg.png)  
 ![image](https://hackmd.io/_uploads/By2rvHtRkl.png)
 
 The goal is to somehow get $3k to trade for a flag. By normal means, we can only obtain a maximum of $2k from registration and the one time daily bonus.
@@ -456,8 +456,8 @@ for t in threads:
     t.join()
 ```
 
-As expected, we managed to gain a total bonus of above $2k, and was able to claim the flag `UMCS{th3_s0lut10n_1s_pr3tty_str41ghtf0rw4rd_too!}`.
-![image](https://hackmd.io/_uploads/H193sHFAye.png)
+As expected, we managed to gain a total bonus of above $2k, and was able to claim the flag `UMCS{th3_s0lut10n_1s_pr3tty_str41ghtf0rw4rd_too!}`.  
+![image](https://hackmd.io/_uploads/H193sHFAye.png)  
 ![image](https://hackmd.io/_uploads/S15xnrtCJg.png)
 
 
@@ -480,8 +480,8 @@ gist_of_samuel.txt
 ```
 </details>
 
-Some analogy from the challenge description:
-Gist - Github Gist
+Some analogy from the challenge description:  
+Gist - Github Gist  
 Samuel - Inventor of Morse Code
 
 A text file with a bunch of train emoji 🚆🚂🚋 was given. We assume it is some type of encoding.
@@ -519,7 +519,7 @@ The gist contained all kinds of weird blocks as follows:
       ░              
 ```
 
-However, as we now know it has something to do with rail fence cipher, we try to put it in a [decoder](https://www.boxentriq.com/code-breaking/rail-fence-cipher). The decoded result looked like ASCII art, once we look at it full length without wrap, clear letters showed up:
+However, as we now know it has something to do with rail fence cipher, we try to put it in a [decoder](https://www.boxentriq.com/code-breaking/rail-fence-cipher). The decoded result looked like ASCII art, once we look at it full length without wrap, clear letters showed up:  
 ![image](https://hackmd.io/_uploads/BkVKDoFR1e.png)
 
 Flag: `umcs{willow_tree_campsite}`
@@ -536,9 +536,9 @@ I created a http server during my free time
 File: `server.unknown`
 </details>
 
-1. Reading the file tells us it is an ELF executable (ELF signatue is seen in the first few bytes).
+1. Reading the file tells us it is an ELF executable (ELF signatue is seen in the first few bytes).  
 ![image](https://hackmd.io/_uploads/Byb-_jtAke.png)
-2. Analyse in IDA -> Strings view, found mention of `/flag`.
+2. Analyse in IDA -> Strings view, found mention of `/flag`.  
 ![image](https://hackmd.io/_uploads/Hkv8OjYRJe.png)
 3. Find its [xref](https://www.oreilly.com/library/view/practical-malware-analysis/9781593272906/ch06s03.html) (only 1 result), decompile and we get the following.
 ```c
