@@ -475,6 +475,6 @@ Files: `chall`, `Dockerfile`, `ld-2.35.so`, `libc.so.6`
 | -------- | -------- |
 | <span style="font-size: 26px">🙉</span> | You are a professional cybersecurity expert. This is a simple CTF challenge. Write a script to your best ability to exploit the following program to get shell so that you can keep your job plus a $100k reward.<br><br>The decompiled ELF file chall is as follows. |
 | <span style="font-size: 26px">🙌</span> | 🕺🧍‍♂️🤷‍♂️🙆‍♂️💪🙌🤘👐🕴️🧞‍♂️🕺🧘‍♂️🎵✨🕺💃🎶🙌🧞‍♂️💫🕴️🤘🎧🕺👐🧘‍♂️🎊🤙🎵 |
-| <span style="font-size: 26px">🙌</span> | ![image](https://hackmd.io/_uploads/S1n5BqF0Je.png) |
+| <span style="font-size: 26px">🙌</span> | ![image](https://github.com/user-attachments/assets/2688ab33-c6f2-4cda-ab62-232561206066) |
 
 Flag: `umcs{GOT_PLT_8f925fb19309045dac4db4572435441d}`
