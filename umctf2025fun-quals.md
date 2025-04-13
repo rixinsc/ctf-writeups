@@ -6,6 +6,7 @@
 > To the uncool people,  
 This is a joke. It was adapted from parts of real life but is highly **fictional**. Many of the challenges shown here are actually challenging to solve and is of decent quality. We do understand most of what the model spits and everything was manually proof-checked. Our team's performance should be evaluated based on the main writeup, **NOT** this one, kthx!
 ---
+![image-1](https://github.com/user-attachments/assets/ee2cac94-18ff-4bab-bfca-c84185d72bc3)
 ## Table of Contents
 - [**Forensic**](#forensic)
   - [**Hidden in Plain Graphic** - PCAP file extraction and LSB steganography](#hidden-in-plain-graphic)
