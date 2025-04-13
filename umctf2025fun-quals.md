@@ -66,7 +66,7 @@ i guess my wallet is broken too ☠
 https://github.com/umcybersec/umcs_preliminary/tree/main/stego-Hotline_Miami
 </details>
 
-![image](https://hackmd.io/_uploads/rJGFJttCyg.png)  
+![image](https://github.com/user-attachments/assets/f3f32428-6741-4641-b20a-705ed69f5e2b)  
 Flag: `umcs{RICHARD_IS_WATCHING_1989}`
 
 ## Web
