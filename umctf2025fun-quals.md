@@ -2,9 +2,26 @@
 
 <img src="https://tenor.com/view/cat-cat-jam-dance-kitty-jamming-gif-21579741.gif" height="360">
 
+### Serious writeup -> [umctf2025-quals.md](umctf2025-quals.md)
 > To the uncool people,  
 This is a joke. It was adapted from parts of real life but is highly **fictional**. Many of the challenges shown here are actually challenging to solve and is of decent quality. We do understand most of what the model spits and everything was manually proof-checked. Our team's performance should be evaluated based on the main writeup, **NOT** this one, kthx!
 ---
+## Table of Contents
+- [**Forensic**](#forensic)
+  - [**Hidden in Plain Graphic** - PCAP file extraction and LSB steganography](#hidden-in-plain-graphic)
+- [**Steganography**](#steganography)
+  - [**Broken** - Repair corrupted MP4 file](#broken)
+  - [**Hotline Miami** - Spectrogram and JPG steganography](#hotline-miami)
+- [**Web**](#web)
+  - [**healthcheck** - Command injection and curl file extraction](#healthcheck)
+  - [**Straightforward** - Race condition of DB transaction](#straightforward)
+- [**Cryptography**](#cryptography)
+  - [**Gist of Samuel** - Morse code and Rail Fence cipher](#gist-of-samuel)
+- [**Reverse Engineering**](#reverse-engineering)
+  - [**htpp-server** - Reverse ELF to find specific HTTP request path for flag](#htpp-server)
+- [**Pwn**](#pwn)
+  - [**babysc** - Shellcode writing](#babysc)
+  - [**liveleak** - ROP with ret2libc](#liveleak)
 
 ## Forensic
 ### Hidden in Plain Graphic
@@ -24,7 +41,7 @@ File: `plain_zight.pcap`
 
 Flag: `umcs{h1dd3n_1n_png_st3g}`
 
-## Stegnography
+## Steganography
 ### Broken
 <details>
   <summary>Description</summary>
@@ -342,7 +359,7 @@ File: `server.unknown`
 
 Flag: `umcs{http_server_a058712ff1da79c9bbf211907c65a5cd}`
 
-## PWN
+## Pwn
 ### babysc
 <details>
   <summary>Description</summary>
