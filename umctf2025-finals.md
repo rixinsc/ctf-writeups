@@ -7,10 +7,10 @@ The writeup for this is kept simple as there are not a lot of interesting things
 ## Table of Contents
 * [**Defense**](#defense)
   * [**Card Shop** - CSRF + SPEL injection](#card-shop)
-  * [**babysc\_note** (Defense)](#babysc-note-defense)
+  * [**babysc\_note** (Defense)](#babysc_note-defense)
 * [**Web**](#web)
   * [**Protected 0 Day HTML Renderer** - Browsershot arbitrary file read](#protected-0-day-html-renderer)
-  * [**S1MPL3 N0T3S**](#s1mpl3-n0t3s)
+  * [**S1MPL3 N0T3S** - CSRF with XSS](#s1mpl3-n0t3s)
 * [**Reverse Engineering**](#reverse-engineering)
   * [**local** - Reading Android SQLite](#local)
   * [**crackme** - UPX + Rust reverse](#crackme)
